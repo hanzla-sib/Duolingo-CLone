@@ -6,12 +6,15 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+
+# Build output
 .next/
 node_modules
 dist
 dist-ssr
 *.local
 
+# Cache
 .cache/
 dist/
 build/
