@@ -1,10 +1,1 @@
-{
-<<<<<<< HEAD
-  "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js"
-=======
-  "/page": "app/page.js",
-  "/buttons/page": "app/buttons/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
->>>>>>> skeleton
-}
+{}
