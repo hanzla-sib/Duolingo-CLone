@@ -1,7 +1,37 @@
+import { Button } from "@/components/ui/button";
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+import { ClerkLoaded, ClerkLoading } from "@clerk/nextjs";
+import { Loader } from "lucide-react";
+import Image from "next/image";
+
 export const Header = () => {
   return (
     <header className="h-20 w-full border-b-2 border-slate-200 px-4">
-      Header
+      <div className="lg:max-w-screen-2xl mx-auto flex items-center justify-between h-full ">
+        <div className="flex items-center p-4  gap-x-3">
+          <div className="bg-green-600 p-3 rounded ">
+            <Image src="/face_c.png" width={40} height={40} alt="logo" />
+          </div>
+          <h1 className="text-2xl font-extrabold text-green-600 tracking-wide">
+            Lingo
+          </h1>
+        </div>
+        <ClerkLoading>
+          <Loader className="h-5 w-5 text-muted-foreground animate-spin" />
+        </ClerkLoading>
+        <ClerkLoaded>
+          <SignedIn>
+            <UserButton afterSignOutUrl="/" />
+          </SignedIn>
+          <SignedOut>
+            <SignInButton mode="modal" fallbackRedirectUrl={"/learn"}>
+              <Button size={"lg"} variant={"ghost"}>
+                Login
+              </Button>
+            </SignInButton>
+          </SignedOut>
+        </ClerkLoaded>
+      </div>
     </header>
   );
 };
