@@ -28,7 +28,7 @@ const page = () => {
         <h1 className="text-xl lg:text-3xl font-bold text-natural-600 max-w-[480px] text-center">
           Learn, practice, and master new languages with Lingo
         </h1>
-        <div>
+        <div className="flex flex-col gap-3 w-full">
           <ClerkLoading>
             <Loader className="h-5 w-5 text-muted-foreground animate-spin"></Loader>
           </ClerkLoading>
@@ -51,7 +51,12 @@ const page = () => {
             </SignedOut>
 
             <SignedIn>
-              <Button size={'lg'} variant={"secondary"} className="w-full" asChild>
+              <Button
+                size={"lg"}
+                variant={"secondary"}
+                className="w-full"
+                asChild
+              >
                 <Link href={"/learn"}>Continue Learning</Link>
               </Button>
             </SignedIn>
