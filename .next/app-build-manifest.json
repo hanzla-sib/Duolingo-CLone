@@ -26,15 +26,25 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(main)/layout.js"
     ],
+    "/(main)/courses/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(main)/courses/page.js"
+    ],
     "/(main)/shop/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(main)/shop/page.js"
     ],
-    "/(main)/courses/page": [
+    "/(main)/quests/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(main)/courses/page.js"
+      "static/chunks/app/(main)/quests/page.js"
+    ],
+    "/(main)/leaderboard/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(main)/leaderboard/page.js"
     ]
   }
 }
