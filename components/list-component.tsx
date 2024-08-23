@@ -2,6 +2,8 @@
 
 import { courses, userProgress } from "@/db/schema";
 import { Card } from "@/components/card";
+import { useRouter } from "next/navigation";
+import { useTransition } from "react";
 
 type Course = typeof courses.$inferSelect;
 
@@ -11,6 +13,17 @@ type Props = {
 };
 
 export const List = ({ course, activeCourseId }: Props) => {
+  const router = useRouter();
+  const [pending, startTransition] = useTransition();
+  const onClick = (id: number) => {
+    if (pending) return;
+    if (id === activeCourseId) {
+      return router.push("/learn");
+    }
+    startTransition(()=>{
+      
+    })
+  };
   return (
     <div className="pt-6 gap-3 grid grid-cols-2 lg:grid-cols-[repeat(auto-fill,minmax(210px,1fr))]">
       {course.map((course) => (
