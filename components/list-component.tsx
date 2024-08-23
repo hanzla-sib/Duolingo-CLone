@@ -2,6 +2,10 @@
 
 import { courses, userProgress } from "@/db/schema";
 import { Card } from "@/components/card";
+import { useRouter } from "next/navigation";
+import { useTransition } from "react";
+import { upsertUserProgress } from "@/actions/user-progress";
+import { toast } from "sonner";
 
 type Course = typeof courses.$inferSelect;
 
@@ -11,6 +15,19 @@ type Props = {
 };
 
 export const List = ({ course, activeCourseId }: Props) => {
+  const router = useRouter();
+  const [pending, startTransition] = useTransition();
+  const onClick = (id: number) => {
+    if (pending) return;
+    if (id === activeCourseId) {
+      return router.push("/learn");
+    }
+    startTransition(() => {
+      upsertUserProgress(id).catch(() => {
+        toast.error("something went wrong");
+      });
+    });
+  };
   return (
     <div className="pt-6 gap-3 grid grid-cols-2 lg:grid-cols-[repeat(auto-fill,minmax(210px,1fr))]">
       {course.map((course) => (
@@ -19,8 +36,8 @@ export const List = ({ course, activeCourseId }: Props) => {
           id={course.id}
           title={course.title}
           imageSrc={course.imageSrc}
-          onClick={() => {}}
-          disabled={false}
+          onClick={onClick}
+          disabled={pending}
           active={course.id === activeCourseId}
         />
       ))}
