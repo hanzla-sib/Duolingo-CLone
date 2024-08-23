@@ -3,10 +3,6 @@ import { Nunito } from "next/font/google";
 import "./globals.css";
 import {
   ClerkProvider,
-  SignedIn,
-  SignedOut,
-  SignInButton,
-  UserButton,
 } from "@clerk/nextjs";
 import { Toaster } from "@/components/ui/sonner";
 const font = Nunito({ subsets: ["latin"] });
