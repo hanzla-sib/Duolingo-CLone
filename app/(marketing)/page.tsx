@@ -28,7 +28,7 @@ const page = () => {
         <h1 className="text-xl lg:text-3xl font-bold text-natural-600 max-w-[480px] text-center">
           Learn, practice, and master new languages with Lingo
         </h1>
-        <div className="flex flex-col gap-3 w-full">
+        <div className="flex flex-col gap-3 w-full justify-center items-center">
           <ClerkLoading>
             <Loader className="h-5 w-5 text-muted-foreground animate-spin"></Loader>
           </ClerkLoading>
