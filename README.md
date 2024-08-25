@@ -10,7 +10,7 @@
 7. Clerk
 8. useTransition react 
 9. shadcn
-
+10. bun
 
 
 // npm run db:studio as set in package.json
