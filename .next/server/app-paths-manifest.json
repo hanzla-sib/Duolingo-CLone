@@ -1,9 +1,11 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
+  "/buttons/page": "app/buttons/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/(marketing)/page": "app/(marketing)/page.js",
-  "/(main)/learn/page": "app/(main)/learn/page.js",
   "/(main)/courses/page": "app/(main)/courses/page.js",
   "/(main)/leaderboard/page": "app/(main)/leaderboard/page.js",
   "/(main)/quests/page": "app/(main)/quests/page.js",
-  "/(main)/shop/page": "app/(main)/shop/page.js"
+  "/(main)/shop/page": "app/(main)/shop/page.js",
+  "/(marketing)/page": "app/(marketing)/page.js",
+  "/(main)/learn/page": "app/(main)/learn/page.js"
 }
