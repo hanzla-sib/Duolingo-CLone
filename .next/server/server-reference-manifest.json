@@ -1,1 +1,5 @@
-{"node":{"6566b42cb0778cdfcd1c6deec12a837cf21db9aa":{"workers":{"app/_not-found/page":"88379","app/buttons/page":"88379","app/(main)/courses/page":"25563","app/(main)/leaderboard/page":"88379","app/(main)/quests/page":"88379","app/(main)/shop/page":"88379","app/(marketing)/page":"88379","app/(main)/learn/page":"88379"},"layer":{"app/_not-found/page":"action-browser","app/buttons/page":"action-browser","app/(main)/courses/page":"action-browser","app/(main)/leaderboard/page":"action-browser","app/(main)/quests/page":"action-browser","app/(main)/shop/page":"action-browser","app/(marketing)/page":"action-browser","app/(main)/learn/page":"action-browser"}},"c20203455114991e07c359aea088bd02825d9ef2":{"workers":{"app/(main)/courses/page":"25563"},"layer":{"app/(main)/courses/page":"action-browser"}},"cde631cbbaa75e9ab9684207919cdd8c0aae6d76":{"workers":{"app/(main)/courses/page":"25563"},"layer":{"app/(main)/courses/page":"action-browser"}}},"edge":{},"encryptionKey":"v2+qUjLUS9uJbziP4T+/GNJEyoarPclY4CpbZ1hZrXI="}
+{
+  "node": {},
+  "edge": {},
+  "encryptionKey": "2Rbp1NPwPBcv4Fg2aWkVO8JS4xp1OUfkAWxL7iHp8lw="
+}
