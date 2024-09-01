@@ -1,34 +1,5 @@
 {
-  "node": {
-    "6566b42cb0778cdfcd1c6deec12a837cf21db9aa": {
-      "workers": {
-        "app/(marketing)/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CReact%20projects%5C%5CDuolingo-CLone%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!",
-        "app/(main)/learn/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CReact%20projects%5C%5CDuolingo-CLone%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!",
-        "app/(main)/courses/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CReact%20projects%5C%5CDuolingo-CLone%5C%5Cactions%5C%5Cuser-progress.ts%22%2C%5B%22upsertUserProgress%22%2C%22%24%24ACTION_0%22%5D%5D%2C%5B%22D%3A%5C%5CReact%20projects%5C%5CDuolingo-CLone%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/(marketing)/page": "action-browser",
-        "app/(main)/learn/page": "action-browser",
-        "app/(main)/courses/page": "action-browser"
-      }
-    },
-    "c20203455114991e07c359aea088bd02825d9ef2": {
-      "workers": {
-        "app/(main)/courses/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CReact%20projects%5C%5CDuolingo-CLone%5C%5Cactions%5C%5Cuser-progress.ts%22%2C%5B%22upsertUserProgress%22%2C%22%24%24ACTION_0%22%5D%5D%2C%5B%22D%3A%5C%5CReact%20projects%5C%5CDuolingo-CLone%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/(main)/courses/page": "action-browser"
-      }
-    },
-    "cde631cbbaa75e9ab9684207919cdd8c0aae6d76": {
-      "workers": {
-        "app/(main)/courses/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CReact%20projects%5C%5CDuolingo-CLone%5C%5Cactions%5C%5Cuser-progress.ts%22%2C%5B%22upsertUserProgress%22%2C%22%24%24ACTION_0%22%5D%5D%2C%5B%22D%3A%5C%5CReact%20projects%5C%5CDuolingo-CLone%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/(main)/courses/page": "action-browser"
-      }
-    }
-  },
+  "node": {},
   "edge": {},
-  "encryptionKey": "2Rbp1NPwPBcv4Fg2aWkVO8JS4xp1OUfkAWxL7iHp8lw="
+  "encryptionKey": "IiN5uHvhlQHMuQ0mLaR5QvMvVig3R8W7CIDHCYM/Ti4="
 }
