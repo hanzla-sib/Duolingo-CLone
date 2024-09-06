@@ -93,10 +93,26 @@ const main = async () => {
       {
         id: 1,
         challengeId: 1,
-        imageSrc: "/man.svg",
+        imageSrc: "/m_Images/boy.svg",
         correct: true,
-        text: "čovjek",
+        text: "el hombre",
         audioSrc: "/es_man.mp3",
+      },
+      {
+        id: 2,
+        challengeId: 1,
+        imageSrc: "/m_Images/girl.svg",
+        correct: false,
+        text: "La mujer",
+        audioSrc: "/es_woman.mp3",
+      },
+      {
+        id: 3,
+        challengeId: 1,
+        imageSrc: "/m_Images/robot.svg",
+        correct: false,
+        text: "el robot",
+        audioSrc: "/es_robot.mp3",
       },
     ]);
 
