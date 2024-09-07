@@ -5,6 +5,7 @@ import React from "react";
 import { Header } from "./Header";
 import { UserProgress } from "@/components/userProgress";
 import { getunits, getUserProgress } from "@/db/queries";
+import { Unit } from "./unit";
 
 const Learn = async () => {
   const userProgressData = getUserProgress();
@@ -30,7 +31,15 @@ const Learn = async () => {
         <Header title={userProgress?.activeCourse?.title} />
         {units?.map((unit) => (
           <div key={unit.id} className="mb-10">
-            {JSON.stringify(unit)}
+            <Unit
+              id={unit?.id}
+              order={unit.order}
+              description={unit.description}
+              title={unit.title}
+              lessons={unit.lessons}
+              activeLesson={undefined}
+              activeLessonPercentage={0}
+            />
           </div>
         ))}
         {/* <div className="space-y-4">

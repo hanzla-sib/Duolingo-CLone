@@ -19,6 +19,7 @@
     "/(main)/learn/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/(main)/learn/page.css",
       "static/chunks/app/(main)/learn/page.js"
     ],
     "/(main)/learn/loading": [
