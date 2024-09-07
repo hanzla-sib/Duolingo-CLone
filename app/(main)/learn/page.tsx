@@ -4,11 +4,15 @@ import { StickyWrapper } from "@/components/sticky-wrapper";
 import React from "react";
 import { Header } from "./Header";
 import { UserProgress } from "@/components/userProgress";
-import { getUserProgress } from "@/db/queries";
+import { getunits, getUserProgress } from "@/db/queries";
 
 const Learn = async () => {
   const userProgressData = getUserProgress();
-  const [userProgress] = await Promise.all([userProgressData]);
+  const unitsData = getunits();
+  const [userProgress, units] = await Promise.all([
+    userProgressData,
+    unitsData,
+  ]);
   if (!userProgress || !userProgress.activeCourse) {
     redirect("/courses");
   }
@@ -24,7 +28,12 @@ const Learn = async () => {
       </StickyWrapper>
       <FeedWrapper>
         <Header title={userProgress?.activeCourse?.title} />
-        <div className="space-y-4">
+        {units?.map((unit) => (
+          <div key={unit.id} className="mb-10">
+            {JSON.stringify(unit)}
+          </div>
+        ))}
+        {/* <div className="space-y-4">
           <div className="h-[700px] bg-blue-500 w-full"></div>
           <div className="h-[700px] bg-blue-500 w-full"></div>
           <div className="h-[700px] bg-blue-500 w-full"></div>
@@ -38,7 +47,7 @@ const Learn = async () => {
           <div className="h-[700px] bg-blue-500 w-full"></div>
           <div className="h-[700px] bg-blue-500 w-full"></div>
           <div className="h-[700px] bg-blue-500 w-full"></div>
-        </div>
+        </div> */}
       </FeedWrapper>
     </div>
   );
