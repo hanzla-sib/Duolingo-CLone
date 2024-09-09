@@ -22,8 +22,8 @@ export const Quiz = ({
   initialPercentage,
   userSubscription,
 }: Props) => {
-  const [hearts, setHearts] = useState(initialHearts);
-  const [percentage, setPercentage] = useState(initialPercentage);
+  const [hearts, setHearts] = useState(3 || initialHearts);
+  const [percentage, setPercentage] = useState(20 || initialPercentage);
   return (
     <>
       <Header

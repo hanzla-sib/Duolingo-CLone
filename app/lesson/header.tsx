@@ -1,5 +1,5 @@
 import { Progress } from "@/components/ui/progress";
-import { X } from "lucide-react";
+import { InfinityIcon, X } from "lucide-react";
 import Image from "next/image";
 
 type Props = {
@@ -28,6 +28,11 @@ export const Header = ({
           alt="Heart"
           className="mr-2"
         />
+        {hasActiveSubscription ? (
+          <InfinityIcon className="h-6 w-6 stroke-[3]" />
+        ) : (
+          hearts
+        )}
       </div>
     </header>
   );
