@@ -11,7 +11,7 @@
 8. useTransition react 
 9. shadcn
 10. bun
-
+11.Zustand 
 
 // npm run db:studio as set in package.json
 
