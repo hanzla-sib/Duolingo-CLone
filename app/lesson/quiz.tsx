@@ -55,6 +55,7 @@ export const Quiz = ({
               {challenge.type==="ASSIST"&&(
                 <QuestionBubble question={challenge.question}/>
               )}
+              
             </div>
           </div>
         </div>
